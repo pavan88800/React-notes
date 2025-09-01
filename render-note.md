@@ -5,9 +5,7 @@
 When a parent component re-renders, React will also re-render all of its children by default,
 even if:
 
-The child has no props, OR
-
-The child’s props did not change.
+The child has no props, OR The child’s props did not change.
 
 👉 Reason: React re-runs the whole subtree under the parent.
 
@@ -143,3 +141,29 @@ If re-render cost is cheaper than comparison cost.
 If state/props change too often (then caching doesn’t help much).
 
 ---
+
+## Note to taken:-
+
+React.memo only prevents unnecessary re-renders when the props from parent → child have not changed (by shallow comparison).
+
+That means:
+
+✅ If the parent re-renders but the child’s props didn’t change → React.memo will stop the child from re-rendering.
+
+❌ If the child uses Context API (useContext) → whenever the context value changes, all consumers will re-render, even if wrapped in React.memo.
+
+Because context bypasses props and directly injects values.
+
+Optimization here: split context into smaller ones or use selectors (like use-context-selector).
+
+❌ If the child uses Redux (useSelector) → component re-renders whenever the selected slice changes.
+
+React.memo won’t stop it, because redux updates come through hooks, not props.
+
+Optimization here:
+
+Select only the exact state needed (useSelector(state => state.user.name)).
+
+Use memoized selectors (reselect).
+
+Sometimes wrap sub-components with React.memo if you pass props down.
