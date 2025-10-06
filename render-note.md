@@ -167,3 +167,33 @@ Select only the exact state needed (useSelector(state => state.user.name)).
 Use memoized selectors (reselect).
 
 Sometimes wrap sub-components with React.memo if you pass props down.
+
+---
+
+1. Re-render
+
+Happens when props or state change inside a component.
+
+The component function executes again, so local variables inside the function are redeclared.
+
+BUT:
+
+useState preserves its value across re-renders.
+
+useRef preserves its .current value across re-renders.
+
+Effects (useEffect) may run again depending on dependency array.
+
+Cleanup function of previous effect only runs if dependencies change.
+
+---
+
+2. Unmount
+
+Happens when the component is removed from the DOM.
+
+React runs the cleanup functions of all useEffects for that component.
+
+All state (useState) and refs (useRef) are lost because the component is destroyed.
+
+---
