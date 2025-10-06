@@ -41,3 +41,25 @@ If you give <Cards key={selectedCategory} selectedCategory={selectedCategory} />
 When selectedCategory changes → React sees the key is different → destroys old component → mounts a fresh one.
 
 Now cache inside useRef is lost (because it belonged to the destroyed instance).
+
+---
+
+## NOTE:-
+
+Unmount only destroys the component.
+
+React removes it from the UI.
+
+Cleanup functions run.
+
+State and refs are lost.
+
+It does NOT automatically create a new component.
+
+---
+
+Remount = Unmount + Mount
+
+Old component is destroyed.
+
+A brand new component instance is created with fresh state/refs
