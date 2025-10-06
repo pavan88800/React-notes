@@ -196,4 +196,36 @@ React runs the cleanup functions of all useEffects for that component.
 
 All state (useState) and refs (useRef) are lost because the component is destroyed.
 
----
+```js
+useEffect(() => {
+  console.log("Effect runs, count:", count);
+
+  return () => {
+    console.log("Cleanup runs, count:", count);
+  };
+}, []);
+```
+
+Key points:
+
+The return inside useEffect is a cleanup function.
+
+It does NOT unmount the component by itself.
+
+React calls this function when the component is about to unmount or before re-running the effect (if dependencies change).
+
+## Unmounting only happens when React removes the component from the UI, e.g., via conditional rendering:
+
+```js
+{
+  showChild && <Child />;
+}
+```
+
+showChild = false → Child is unmounted → React calls the cleanup function.
+
+So in your example:
+
+If the component stays mounted, the cleanup function will not run, even though it’s returned from useEffect.
+
+## The cleanup runs automatically on unmount or before re-running the effect if dependencies change.
