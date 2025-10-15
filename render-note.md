@@ -229,15 +229,3 @@ So in your example:
 If the component stays mounted, the cleanup function will not run, even though it’s returned from useEffect.
 
 ## The cleanup runs automatically on unmount or before re-running the effect if dependencies change.
-
-## NOTE:-
-
-Unmount only destroys the component.
-
-React removes it from the UI.
-
-Cleanup functions run.
-
-State and refs are lost.
-
-It does NOT automatically create a new component.

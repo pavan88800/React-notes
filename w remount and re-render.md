@@ -29,7 +29,7 @@ Happens when React destroys the old component and creates a new one from scratch
 
 State and refs are reset (fresh instance).
 
-Lifecycle:
+Lifecycle:-
 
 Old component’s cleanup runs (like useEffect cleanup).
 
