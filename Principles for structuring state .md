@@ -39,7 +39,11 @@ const isLoggedIn = user !== null; // derived
 
 ## 3️⃣ Avoid redundant state
 
-What it means: Don’t store something in state if you can calculate it from existing state or props.
+What it means: If you can calculate some information from the component’s props or its existing state variables during rendering, you should not put that information into that component’s state..
+
+## Avoid redundant state means:
+
+👉 If some information already exists in state or props, don’t store it again in another state variable.
 
 Why: Redundant state is unnecessary and can cause bugs.
 
@@ -104,3 +108,11 @@ Avoid redundant state → compute what you can instead of storing it.
 Avoid duplication → don’t store the same data multiple times.
 
 Avoid deep nesting → keep state flat for easier updates.
+
+---
+
+## NOTE:
+
+## What is Derived:-
+
+Derived values are values that can be calculated from other state or props instead of being stored separately.
