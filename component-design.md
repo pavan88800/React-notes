@@ -357,15 +357,27 @@ This separation = clean & scalable architecture.
 If you want to think like a senior frontend engineer, follow this:
 
 ✔ Start with the API
+
 ✔ Smart parent, dumb child
+
 ✔ UI ≠ Logic
+
 ✔ Predict the future
+
 ✔ State up
+
 ✔ Prefer controlled components
+
 ✔ Use custom hooks
+
 ✔ Think in flows
+
 ✔ Keep components small
+
 ✔ Don’t be clever
+
 ✔ Care about performance
+
 ✔ Think declaratively
+
 ✔ Write clean & readable code
