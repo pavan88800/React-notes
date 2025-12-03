@@ -207,14 +207,21 @@ Better input:
 Your current approach:
 
 ❌ All logic sits inside child component
+
 ❌ Components tightly coupled
+
 ❌ Hard to reuse
+
 ❌ Ref-heavy and complicated
 
 What senior wants:
 
 ✔ Parent manages logic
+
 ✔ Child is dumb & reusable
+
 ✔ Clear props
+
 ✔ Clean architecture
+
 ✔ Input should not need full otp state
