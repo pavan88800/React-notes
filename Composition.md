@@ -92,3 +92,107 @@ it’s about writing **readable, scalable, and maintainable code**.
 
 Composition helps you design components that grow **with features**,  
 not against them.
+
+---
+
+# Props vs Composition in React
+
+## ❓ Is Passing Props Bad?
+
+No. Passing props is **not bad by default**.  
+It becomes a problem only when props are used to describe **complex UI structure** instead of simple configuration.
+
+---
+
+## ✅ When Passing Props Is Good
+
+Passing props works well when:
+
+- The component is small
+- The number of props is limited
+- Props configure behavior or appearance
+- Props are easy to understand without documentation
+
+Example:
+
+```jsx
+<Button variant="primary" size="md" disabled />
+```
+
+## This is:
+
+Readable
+
+Scalable
+
+Maintainable
+
+---
+
+## ❌ When Passing Props Becomes a Problem
+
+# Passing props becomes hard to read and hard to scale when:
+
+Props control layout or structure
+
+New features require adding more props
+
+The component becomes tightly coupled to many responsibilities
+
+for Example:
+
+```js
+<Card
+  showHeader
+  headerTitle="Profile"
+  showAvatar
+  avatarUrl="..."
+  showFooter
+  footerText="Edit"
+  footerAlign="right"
+/>
+```
+
+This is a sign of prop explosion.
+
+---
+
+## ✅ Solution: Use Component Composition
+
+Instead of describing structure via props, use JSX composition.
+
+```js
+<Card>
+  <Card.Header>
+    <Avatar src="..." />
+    <Card.Title>Profile</Card.Title>
+  </Card.Header>
+
+  <Card.Footer>
+    <Button>Edit</Button>
+  </Card.Footer>
+</Card>
+```
+
+## Benefits:
+
+JSX clearly shows UI structure
+
+Component API remains small and stable
+
+Easy to extend without breaking changes
+
+More flexible and reusable components
+
+---
+
+## 💡 Rule of Thumb
+
+Passing props is fine —
+but if the number of props keeps growing to describe structure,
+prefer composition.
+
+## Important
+
+Clean code isn’t about writing less code —
+it’s about writing readable and scalable code.
