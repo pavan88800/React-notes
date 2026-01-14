@@ -345,8 +345,4 @@ if (rows === cols) {
 
 ---
 
-- [Old Version (React.js)](https://codesandbox.io/p/sandbox/jnr53v?file=%2Fsrc%2FApp.js%3A129%2C6)
-
----
-
 - [New Version (React.js)](https://codesandbox.io/p/sandbox/jnr53v?file=%2Fsrc%2FApp.js%3A14%2C40)

@@ -13,3 +13,9 @@
 - [Grid Lights](https://codesandbox.io/p/sandbox/gridlights-gjfj8d?file=%2Fsrc%2FApp.js)
 
 - [Progress Bar (React.js)](https://codesandbox.io/p/sandbox/5r7cxp?file=%2Fsrc%2Fstyles.css%3A17%2C25)
+
+- [Carousel (React.js)](https://codesandbox.io/p/sandbox/carousel-sqdlyc?file=%2Fsrc%2FApp.js%3A145%2C3)
+
+- [Tic-Tac-Toe new](https://codesandbox.io/p/sandbox/twilight-browser-sldxwf?file=%2Fsrc%2FApp.js%3A86%2C31)
+
+- [AutoComplete](https://codesandbox.io/p/sandbox/mhy6k5?file=%2Fsrc%2FApp.js%3A50%2C11)
