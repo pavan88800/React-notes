@@ -598,3 +598,12 @@ Remember these forever:
 ---
 
 Made with ❤️ by a dev who finally understood the mental model!
+
+---
+
+## 🔥 The Answer:-
+
+For RECURSIVE components: Use onCheckboxChange={handleClick} ✅
+
+For NON-RECURSIVE components: Either works, but onClick={() => handleClick(id)} is more explicit
+Your code is doing it RIGHT! 💪
