@@ -113,3 +113,5 @@ The fact that you're asking this question means you're noticing patterns.
 That’s the very moment when juniors turn into seniors.
 
 You just need consistent exposure to the right patterns
+
+---
