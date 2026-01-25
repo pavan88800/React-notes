@@ -21,3 +21,5 @@
 - [AutoComplete](https://codesandbox.io/p/sandbox/mhy6k5?file=%2Fsrc%2FApp.js%3A50%2C11)
 
 - [Stat Rating (React.js)](https://codesandbox.io/p/sandbox/hfhtyg?file=%2Fsrc%2FApp.js%3A34%2C11)
+
+- [React Problem: Dynamic Grid with Incremental Values (React.js)](https://codesandbox.io/p/sandbox/s96f4j?file=%2Fsrc%2FApp.js%3A24%2C4)
