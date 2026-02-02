@@ -22,7 +22,7 @@
 
 - [Stat Rating (React.js)](https://codesandbox.io/p/sandbox/hfhtyg?file=%2Fsrc%2FApp.js%3A34%2C11)
 
-- [React Problem: Dynamic Grid with Incremental Values (React.js)](https://codesandbox.io/p/sandbox/s96f4j?file=%2Fsrc%2FApp.js%3A24%2C4)
+- [React Problem: Dynamic Grid with Incremental Values (React.js) Okta SDE 2](https://codesandbox.io/p/sandbox/s96f4j?file=%2Fsrc%2FApp.js%3A24%2C4)
 
 - [React Problem: Pagination (React.js)](https://codesandbox.io/p/sandbox/5vw7cp?file=%2Fsrc%2Fcomponents%2FPagination.jsx)
 
