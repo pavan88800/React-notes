@@ -265,3 +265,13 @@ useState doesn’t reset
 useReducer doesn’t reset
 
 Custom hook state is preserved
+
+---
+
+useMemo and useCallback are called on every render so React can check their dependency arrays.
+
+They are not re-declared in the sense of creating a new value/function if the dependencies haven’t changed.
+
+React simply returns the same memoized value or function reference.
+
+So: called every render ✔️, re-declared ❌ (unless deps change).
