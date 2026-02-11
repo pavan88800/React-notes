@@ -237,3 +237,31 @@ If the component stays mounted, the cleanup function will not run, even though i
 Unmounting always triggers cleanup, no matter the dependencies.
 
 Dependency changes trigger cleanup + re-run, but with [] there are no dependency changes.
+
+---
+
+✅ Final polished statement (with state preservation)
+
+When state changes, the component re-renders and all hooks are called again. React preserves hook state internally, so state values are not reset. useMemo and useCallback run on every render to check their dependency arrays, but their callback functions execute only when the dependencies change. If dependencies do not change, React returns the same memoized value or function reference.
+
+---
+
+## 🔑 Why state is preserved (simple explanation)
+
+React stores hook state in the Fiber node
+
+Hooks are matched by call order
+
+On re-render, React:
+
+Reuses previous state
+
+Does not reinitialize it
+
+That’s why:
+
+useState doesn’t reset
+
+useReducer doesn’t reset
+
+Custom hook state is preserved
