@@ -275,3 +275,9 @@ They are not re-declared in the sense of creating a new value/function if the de
 React simply returns the same memoized value or function reference.
 
 So: called every render ✔️, re-declared ❌ (unless deps change).
+
+---
+
+##Developer why
+
+React executes Model() first, but JSX is just a Virtual DOM object. The browser cannot paint it until the entire render phase completes and React commits changes, so a slow component later in the tree can delay the modal appearing...
