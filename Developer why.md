@@ -290,3 +290,56 @@ Steps browser takes to convert code into pixels on screen:
 | Same JSX reference = no re-render | Pass content as prop from stateless parent      |
 | useRef = no re-render             | Use when you don't need visual updates          |
 | Context/Redux = shared state      | Only way to truly share state across components |
+
+---
+
+// Should be "content" not "childre"
+<ScrollableWithMovingBlock
+content={ // ✅ correct!
+<>
+<VerySlowComponent />
+<BunchOfstuff />
+<OtherStuffAlsoComplicated />
+</>
+}
+/>
+
+```
+
+---
+
+## Now your actual question — Why no re-render?
+```
+
+App has NO state
+→ App never re-renders
+→ content JSX created only ONCE
+→ same reference forever
+
+ScrollableWithMovingBlock scrolled
+→ position state changes
+→ ScrollableWithMovingBlock re-renders
+→ looks at content prop
+→ same reference! nothing changed
+→ children SKIP re-render ✅
+
+---
+
+When WILL content re-render?
+
+```js
+// ❌ If App had state!
+export default function App() {
+  const [something, setSomething] = useState(0); // App re-renders!
+  return (
+    <ScrollableWithMovingBlock
+      content={
+        <>
+          <VerySlowComponent /> {/_ new object every render! _/}
+          <BunchOfstuff /> {/_ re-renders! _/}
+        </>
+      }
+    />
+  );
+}
+```
