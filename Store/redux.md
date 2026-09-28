@@ -1,5 +1,7 @@
 # Redux – Centralized Store & Unidirectional Data Flow
 
+## userReducer : **https://dev.to/manav-1011/understanding-the-usereducer-hook-in-react-3d5l**
+
 ## 1. What is Redux?
 
 Redux is a **state management library** that provides centralized state management and a predictable state update mechanism using unidirectional data flow.
