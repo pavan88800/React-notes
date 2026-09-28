@@ -6,7 +6,7 @@ _Use when asked: "Tell me about yourself."_
 
 > Hi, I'm Pavan. I'm a Software Engineer at GeekyAnts with about five years of experience in frontend development, mainly building web applications with React, TypeScript, and Redux.
 >
-> Currently I'm working on AirOps, an aviation operations platform that helicopter operators use to run their day-to-day operations: flight planning and booking, crew management, flight reports, logbooks, fuel, expenses, and billing.
+> Currently, I'm working on AirOps, an aviation operations platform that helps helicopter operators run their day-to-day operations, such as flight planning, crew management, logbooks, and billing.
 >
 > On the frontend, I build and maintain features across these modules. One area I've worked on closely is the Web Planner, a central screen where operations teams view and manage scheduled flights. Since it's a data-heavy screen, a lot of my work there has been around state management, reusable components, and keeping it fast and reliable.
 >
