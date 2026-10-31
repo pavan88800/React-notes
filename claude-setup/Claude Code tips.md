@@ -18,3 +18,5 @@ Running from the root lets Claude Code see your whole project (configs, dependen
 ### 2. Run `/init` immediately
 
 Running `/init` creates a **`CLAUDE.md`** file in your project root. Think of it as Claude's long-term memory for your project. It's a starting point, so edit it to add your own rules and conventions.
+
+If a CLAUDE.md already exists, `/init` improves on it instead of starting from scratch.
