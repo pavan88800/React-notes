@@ -56,4 +56,4 @@ Running `/memory` shows where Claude's memory is stored for your project.
 
 ## Structure: What, Domain, Validation
 
-- what = tech stack. `Domain context` = what each part does. `Validation steps` = tests, linters, type checkers.
+- what = tech stack. **`Domain context`** = what each part does. **`Validation steps`** = tests, linters, type checkers.
