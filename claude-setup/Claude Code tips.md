@@ -31,7 +31,7 @@ If a CLAUDE.md already exists, `/init` improves on it instead of starting from s
 
 ---
 
-## Check memory with `/memory`
+### 3. Check memory with `/memory`
 
 Running `/memory` shows where Claude's memory is stored for your project.
 
@@ -48,12 +48,12 @@ Running `/memory` shows where Claude's memory is stored for your project.
 
 ---
 
-## keep **`CLAUDE.md`** concise
+### 4. keep **`CLAUDE.md`** concise
 
 - It gets prepended to every prompt. A bloated files eats your context window and degrades performance. Focus on what matters.
 
 ---
 
-## Structure: What, Domain, Validation
+### 5. Structure: What, Domain, Validation
 
 - what = tech stack. **`Domain context`** = what each part does. **`Validation steps`** = tests, linters, type checkers.
