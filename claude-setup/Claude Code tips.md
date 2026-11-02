@@ -57,3 +57,40 @@ Running `/memory` shows where Claude's memory is stored for your project.
 ### 5. Structure: What, Domain, Validation
 
 - what = tech stack. **`Domain context`** = what each part does. **`Validation steps`** = tests, linters, type checkers.
+
+---
+
+## Keyboard Shortcuts
+
+### 6. `Shift+Tab` toggles modes
+
+Press `Shift+Tab` to cycle through modes:
+
+- **Manual** (default): Claude asks before every edit.
+- **Accept edits**: Claude edits files without asking.
+- **Plan**: Claude only plans and doesn't change any code. Use this before big changes.
+
+### 7. `Esc` interrupts
+
+Press `Esc` to stop Claude mid-response. It keeps the work done so far, so you can redirect it.
+
+### 8. Double `Esc` clears input
+
+When your prompt has text, press `Esc` twice to clear it. The draft is saved, so press `↑` to get it back.
+
+### 9. Double `Esc` on empty input = rewind
+
+When your prompt is empty, press `Esc` twice to open the **rewind** menu. It lets you go back to an earlier point and restore your code, the conversation, or both.
+
+### 10. Screenshot and drag
+
+Take a screenshot (for example, a UI bug or an error) and drag the image file into the Claude Code terminal. Claude can see and understand the image.
+
+You can also paste an image from your clipboard with `Ctrl+V` (`Cmd+V` in iTerm2).
+
+### 11. Add context to screenshots
+
+Don't send a screenshot alone. Tell Claude what to look at and what you want.
+
+- ❌ `[Image #1]`
+- ✅ `[Image #1] The submit button overlaps the footer on mobile. Fix the spacing.`
