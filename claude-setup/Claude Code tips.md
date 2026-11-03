@@ -66,7 +66,8 @@ Running `/memory` shows where Claude's memory is stored for your project.
 
 Press `Shift+Tab` to cycle through modes:
 
-- **Manual** (default): Claude asks before every edit.
+- **Auto** (default): Claude works without asking. A safety check blocks risky actions.
+- **Manual**: Claude asks before every edit.
 - **Accept edits**: Claude edits files without asking.
 - **Plan**: Claude only plans and doesn't change any code. Use this before big changes.
 
